@@ -1,0 +1,279 @@
+/* GENERAL STYLINGS */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: #3c3b37;
+}
+
+a:hover,
+a:focus {
+  color: #5eb7c5;
+}
+
+.icon,
+.search_box button > img {
+  width: 1.3em;
+  color: crimson;
+}
+
+body {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #3c3b37;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.main_nav,
+.brand_side,
+.search_box,
+.right_hand,
+.first_box,
+.banner_side {
+  display: flex;
+}
+
+
+
+header {
+  font-size: .94rem;
+  z-index: 999999999 !important;
+}
+
+.main_nav {
+  min-height: 7vh;
+  align-items: center;
+  width: 98%;
+  margin: 0 auto;
+  padding: 11px 0;
+}
+
+.brand_side {
+  align-items: center;
+  margin-right: 1.5em;
+}
+
+.brand_side .brand > .logo {
+  width: 7.8em;
+}
+
+.brand_side > a:not(:first-child) {
+  margin-left: 1.5em;
+}
+
+
+.search_box {
+  align-items: center;
+}
+
+.search_box > button {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  z-index: 9999999999;
+  position: relative;
+  left: 13px;
+  top: 3px;
+}
+
+.search_box > input {
+  width: 54.4em;
+  height: 6.1vh;
+  padding-left: 48px;
+  margin-left: -19px;
+  border: 1px solid rgb(139, 139, 139);
+  border-radius: 50px;
+  outline: none;
+  font-family: sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+  font-weight: 400;
+  background-color: #fbfbf8;
+}
+
+
+.right_hand {
+  align-items: center;
+  margin-left: 1.5em;
+}
+
+.right_hand > a {
+  margin-right: 1.5em;
+}
+
+.right_hand a > .nav_icon {
+  margin-top: 4px;
+  width: 1.4em;
+}
+
+
+.user_abb {
+  background-color: #f0bd4f;
+  padding: 5px;
+  font-size: .9rem;
+  border-radius: 50px;
+  position: relative;
+  left: -2px;
+  color: #fff !important;
+}
+
+.user_abb:hover {
+  color: #fff;
+}
+
+
+.sub_nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 0;
+  border-top: 1px solid #dcdacb;
+  background-color: #fbfbf8;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
+  z-index: 999999999 !important;
+}
+
+.sub_nav > a:not(:last-child) {
+  margin-right: 2em;
+}
+
+
+/* MAIN CONTENT AREA */
+main {
+  width: 100%;
+}
+
+/* FLASH SALE SECTION */
+.flashsale_sect {
+  width: 84%;
+  margin: 0 auto;
+  position: relative;
+  z-index: -1;
+}
+
+.flashsale_sect > .flash_banner {
+  background-color: #fff;
+  display: inline-block;
+  position: absolute;
+  top: 58px;
+  left: 46px;
+  line-height: 2em;
+  height: 10em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 30px;
+  -webkit-box-shadow: 2px 2px 6px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
+  -moz-box-shadow: 2px 2px 6px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
+  box-shadow: 2px 2px 6px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
+}
+
+.flashsale_sect .flash_banner > h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.flashsale_sect .flash_banner > p {
+  margin-top: .8em;
+  line-height: 1.4em;
+  font-size: 1.25rem;
+}
+
+.flashsale_sect > img {
+  width: 100%;
+}
+
+/* LET'S START LEARNING SECTION */
+.learning_sect {
+  width: 84%;
+  margin: 0 auto;
+  padding: 3em 20px 0 20px;
+}
+
+.first_box {
+ justify-content: space-between;
+ align-items: center;
+}
+
+.first_box > h2 {
+  font-size: 1.8em;
+  font-family: sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+}
+
+.first_box > a,
+.first_box > a:visited,
+.first_box > a:focus {
+  color: #0e6979;
+  font-weight: bold;
+  font-family: sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+}
+
+.first_box > a:hover {
+  color: #0a4a55;
+}
+
+
+.youtube_iframe {
+  height: 11em;
+  width: 27em;
+  margin-top: 1em;
+  border-radius: 3px;
+}
+
+
+.banner_side {
+  color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2em;
+  background: url(https://s.udemycdn.com/browse_components/shared-assets/purple-intersect.svg) repeat-x #003640;
+  background-size: auto 120%;
+  background-position: 0 -2.4rem;
+  border-radius: 5px;
+  height: 5.3em;
+  padding: 0 25px;
+}
+
+
+.banner_side > p {
+  font-size: 1.1rem;
+  font-weight: bolder;
+}
+
+.banner_side p > span {
+  font-weight: 400;
+  margin-left: 5px;
+}
+
+
+.banner_side .buttons > .left,
+.banner_side .buttons > .left:active,
+.banner_side .buttons > .left:focus {
+  color: #fff;
+  font-weight: bold;
+  background-color: #0f7c90;
+  padding: 9px 12px;
+  border-radius: 5px;
+}
+
+.banner_side .buttons > .left:hover {
+  background-color: #0a4a55;
+}
+
+.banner_side .buttons > .right {
+  color: #fff;
+  font-weight: bold;
+  border: 1px solid #fff;
+  background-color: transparent;
+  padding: 8px 20px;
+  border-radius: 5px;
+  margin-left: 8px;
+}
